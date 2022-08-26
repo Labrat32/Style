@@ -31,37 +31,6 @@ const ListItem = (props) => {
 ListItem.propTypes = {
   singleMedia: PropsTypes.object,
 };
-// const App = () => {
-//   return (
-//       <View style={[
-//         styles.container, {
-//           // Try setting `flexDirection` to `"row"`.
-//           flexDirection: 'column',
-//         }]}>
-//         <View style={styles.Yks}>
-//           <ImageBackground source={require('./assets/Nice_boat.jpg')}
-//                            style={styles.tausta}
-//           imageStyle={styles.boatLogo}/>
-//           <Text style={styles.slogan}>Tosi siisti slogan</Text>
-//         </View>
-//         <View style={styles.Kaks}>
-//           <Image style={styles.kuva} source={require('./assets/DK_OK.png')}/>
-//           <Text>Kaksi</Text>
-//         </View>
-//         <View style={styles.Kol}>
-//           <View style={styles.vasen}>
-//             <Text>Vasen</Text>
-//           </View>
-//           <View style={styles.oikee}>
-//             <Text>Oikee</Text>
-//           </View>
-//         </View>
-//         <View style={styles.Nee}>
-//           <Text>Footer</Text>
-//         </View>
-//       </View>
-//   );
-// };
 
 const mediaArray = [
   {
@@ -171,25 +140,6 @@ const styles = StyleSheet.create({
     // overflow: 'hidden',
     // borderWidth: 5,
     // borderBottomEndRadius: 20,
-  },
-  Kol: {
-    flex: 3,
-    flexDirection: 'row',
-    //height: 50,
-    //width: 50,
-    overflow: 'hidden',
-    backgroundColor: 'green',
-  },
-  Nee: {
-    height: 50,
-  },
-  vasen: {
-    backgroundColor: 'blue',
-    flex: 1,
-  },
-  oikee: {
-    backgroundColor: 'teal',
-    flex: 1,
   },
   kuva: {
     resizeMode: 'stretch',
