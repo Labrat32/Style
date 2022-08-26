@@ -10,7 +10,6 @@ import {
 import PropsTypes from 'prop-types';
 import React from 'react';
 
-
 const ListItem = (props) => {
   return (
       <TouchableOpacity style={styles.container}>
@@ -75,10 +74,10 @@ const App = () => {
           <Text style={styles.slogan}>Laivakissat</Text>
         </View>
         <View style={styles.Kaks}>
-      <FlatList
-          data={mediaArray}
-          renderItem={({item}) => <ListItem singleMedia={item}/>}
-      />
+          <FlatList
+              data={mediaArray}
+              renderItem={({item}) => <ListItem singleMedia={item}/>}
+          />
         </View>
       </View>
   );
@@ -86,7 +85,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   page: {
-    flex: 1
+    flex: 1,
   },
   container: {
     flex: 1,
@@ -96,7 +95,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontStyle: 'italic',
-    color: "#869299"
+    color: '#869299',
   },
   image: {
     flex: 1,
@@ -109,12 +108,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#3c3f41',
     padding: 10,
-    fontStyle: 'italic'
+    fontStyle: 'italic',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: "#bababa"
+    color: '#bababa',
   },
   boatLogo: {
     borderBottomEndRadius: 35,
@@ -126,20 +125,11 @@ const styles = StyleSheet.create({
   },
   Yks: {
     flex: 1,
-    //height: 50,
-    //width: 50,
-    backgroundColor:'black',
+    backgroundColor: 'black',
     position: 'relative',
   },
   Kaks: {
     flex: 3,
-    // height: 200,
-    // width: 200,
-    // alignSelf: 'center',
-    // backgroundColor: 'yellow',
-    // overflow: 'hidden',
-    // borderWidth: 5,
-    // borderBottomEndRadius: 20,
   },
   kuva: {
     resizeMode: 'stretch',
@@ -154,9 +144,8 @@ const styles = StyleSheet.create({
     padding: 3,
     top: 80,
     left: 23,
-    color: "white",
+    color: 'white',
     fontSize: 30,
-
   },
 });
 
